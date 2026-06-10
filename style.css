@@ -5,13 +5,13 @@
 }
 
 :root {
-  --bg:        #0f0e0c;
-  --bg-alt:    #141210;
-  --bg-card:   #1a1815;
-  --border:    #2b2823;
-  --text:      #f0e8d8;
-  --text-muted: #9a9080;
-  --text-faint: #504840;
+  --bg:        #070d1a;
+  --bg-alt:    rgba(10, 16, 30, 0.80);
+  --bg-card:   rgba(12, 20, 38, 0.85);
+  --border:    #1c2c48;
+  --text:      #dde8ff;
+  --text-muted: #7a90b8;
+  --text-faint: #334460;
   --accent:    #c07828;
   --accent-dim: rgba(192, 120, 40, 0.10);
   --radius:    3px;
@@ -45,6 +45,21 @@ a {
   text-decoration: none;
 }
 
+/* ── CANVAS BACKGROUND ───────────────────────── */
+#bg-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.section, .hero, footer {
+  position: relative;
+  z-index: 1;
+}
+
 /* ── NAV ─────────────────────────────────────── */
 .nav {
   position: fixed;
@@ -53,7 +68,9 @@ a {
   right: 0;
   z-index: 100;
   height: var(--nav-h);
-  background: var(--bg);
+  background: rgba(7, 13, 26, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
   transition: border-color var(--transition);
 }
