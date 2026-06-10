@@ -14,11 +14,12 @@
   <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <span class="nav-logo">nw</span>
+      <span class="nav-logo">Nathan Wu</span>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#cardistry">Cardistry</a></li>
         <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
     </div>
@@ -27,12 +28,10 @@
   <!-- HERO -->
   <section class="hero" id="home">
     <div class="hero-content">
-      <p class="hero-eyebrow">Hi, I'm</p>
       <h1 class="hero-name">Nathan Wu</h1>
       <p class="hero-title">Software Engineer &amp; AI/ML Enthusiast</p>
       <p class="hero-bio">
-        CS graduate from UC Santa Cruz. I build intelligent systems — from multithreaded
-        servers in C to LLM-powered recommendation engines. Based in San Mateo, CA.
+        CS graduate from UC Santa Cruz. I build intelligent systems. Based in San Mateo, CA.
       </p>
       <div class="hero-rule" aria-hidden="true"></div>
       <div class="hero-actions">
@@ -60,8 +59,7 @@
       <div class="about-grid">
         <div class="about-text">
           <p>
-            I'm a Computer Science graduate from <strong>UC Santa Cruz</strong> with a passion
-            for building systems that are both technically rigorous and practically useful.
+            I'm a Computer Science graduate from <strong>UC Santa Cruz</strong> with a focus on building useful and interpretible AI systems.
           </p>
           <p>
             My work spans full-stack development, systems programming, and applied machine learning.
@@ -69,8 +67,11 @@
             designing multi-modal retrieval pipelines or squeezing performance out of a C thread pool.
           </p>
           <p>
-            When I'm not coding, I practice card magic (hence the Mnemonica trainer).
+            Outside of my technical experience, I am also an avid cardist, speedcuber, and rock climber.
           </p>
+        </div>
+        <div class="about-photo">
+          <img src="S1031977%201%201%201.jpg" alt="Nathan Wu" />
         </div>
       </div>
     </div>
@@ -80,7 +81,6 @@
   <section class="section section-alt" id="projects">
     <div class="container">
       <h2 class="section-title"><span class="section-num">02 —&nbsp;</span>Projects</h2>
-      <p class="section-subtitle">A selection of things I've built</p>
       <div class="projects-grid">
 
         <article class="project-card featured">
@@ -217,22 +217,6 @@
         </article>
 
       </div>
-
-      <!-- DS&A section -->
-      <div class="dsa-section">
-        <h3 class="dsa-title">Data Structures &amp; Algorithms</h3>
-        <p class="dsa-desc">Additional implementations exploring core CS fundamentals:</p>
-        <div class="dsa-chips">
-          <span class="dsa-chip">BFS Pathfinder</span>
-          <span class="dsa-chip">BST Dictionary</span>
-          <span class="dsa-chip">Red-Black Tree Word Frequency</span>
-          <span class="dsa-chip">BigInt Calculator</span>
-          <span class="dsa-chip">Find SCC</span>
-          <span class="dsa-chip">LexSort</span>
-          <span class="dsa-chip">Matrix Operations</span>
-          <span class="dsa-chip">Perfect Shuffle</span>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -277,8 +261,78 @@
             <div class="skill-item"><span class="skill-dot tool-streamlit"></span>Streamlit</div>
             <div class="skill-item"><span class="skill-dot tool-jupyter"></span>Jupyter</div>
             <div class="skill-item"><span class="skill-dot tool-docker"></span>Docker</div>
+            <div class="skill-item"><span class="skill-dot tool-claude"></span>Claude Code</div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDISTRY -->
+  <section class="section section-alt" id="cardistry">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">04 —&nbsp;</span>Cardistry</h2>
+      <div class="videos-grid">
+
+        <div class="video-card">
+          <div class="video-wrapper" data-videoid="Aea30yuM3FA">
+            <img src="https://img.youtube.com/vi/Aea30yuM3FA/maxresdefault.jpg" alt="Solitaire — Cardistry by Nathan Wu" class="video-thumb" loading="lazy" />
+            <button class="play-btn" aria-label="Play video">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </button>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Solitaire</h3>
+            <p class="video-desc">Winner of the 2024 Cardistry-Con Film Festival and the 2025 Video of the Year. Premiered at Cardistry-Con 2024 in Tokyo, Japan.</p>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-wrapper" data-videoid="mvXJdCjxhJU">
+            <img src="https://img.youtube.com/vi/mvXJdCjxhJU/maxresdefault.jpg" alt="Slug City" class="video-thumb" loading="lazy" />
+            <button class="play-btn" aria-label="Play video">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </button>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Slug City</h3>
+            <p class="video-desc">A collection of original cardistry moves filmed in Santa Cruz, CA. Premiered at Cardistry-Con 2025 in New York City, USA.</p>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-wrapper" data-videoid="4PSDmTFFbCA">
+            <img src="https://img.youtube.com/vi/4PSDmTFFbCA/maxresdefault.jpg" alt="" class="video-thumb" loading="lazy" />
+            <button class="play-btn" aria-label="Play video">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </button>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Cruise Control</h3>
+            <p class="video-desc">Winner of the 2022 Cardistry-Con Film Festival. Premiered at Cardistry-Con 2022 in San Diego, CA.</p>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-wrapper" data-videoid="ZgA-wTWm8m0">
+            <img src="https://img.youtube.com/vi/ZgA-wTWm8m0/maxresdefault.jpg" alt="" class="video-thumb" loading="lazy" />
+            <button class="play-btn" aria-label="Play video">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </button>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">123 | Fontaine x Sesame Street</h3>
+            <p class="video-desc">Original cardistry featuring playing cards in collaboration with Fontaine Cards and Sesame Street.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="Media-footer">
+        <p class="media-cta-text">Watch more of my original cardistry on Instagram:</p>
+        <a href="https://instagram.com/nthanwu" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+          <span>instagram.com/nthanwu</span>
+        </a>
       </div>
     </div>
   </section>
@@ -286,7 +340,7 @@
   <!-- CONTACT -->
   <section class="section section-contact" id="contact">
     <div class="container container-narrow">
-      <h2 class="section-title"><span class="section-num">04 —&nbsp;</span>Get In Touch</h2>
+      <h2 class="section-title"><span class="section-num">05 —&nbsp;</span>Get In Touch</h2>
       <p class="contact-text">
         I'm currently open to new opportunities. Whether you have a question, a project idea,
         or just want to say hi — feel free to reach out.
