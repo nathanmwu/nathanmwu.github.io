@@ -36,9 +36,9 @@
         const dy = nodes[i].y - nodes[j].y;
         const dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < MAX_DIST) {
-          const alpha = (1 - dist / MAX_DIST) * 0.22;
-          ctx.strokeStyle = `rgba(80, 130, 220, ${alpha})`;
-          ctx.lineWidth = 0.7;
+          const alpha = (1 - dist / MAX_DIST) * 0.5;
+          ctx.strokeStyle = `rgba(100, 160, 255, ${alpha})`;
+          ctx.lineWidth = 1.2;
           ctx.beginPath();
           ctx.moveTo(nodes[i].x, nodes[i].y);
           ctx.lineTo(nodes[j].x, nodes[j].y);
@@ -49,8 +49,8 @@
 
     for (const n of nodes) {
       ctx.beginPath();
-      ctx.arc(n.x, n.y, 1.8, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(110, 160, 255, 0.45)';
+      ctx.arc(n.x, n.y, 2.8, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(140, 190, 255, 0.8)';
       ctx.fill();
     }
 
